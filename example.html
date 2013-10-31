@@ -1,0 +1,54 @@
+<!doctype html> 
+<html lang="en"> 
+    <head> 
+     
+        <title>jQuery Drag Blank Quiz (draggable fill-in-the-blank) Quiz Plugin Demo</title> 
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+        <link href="example.css" media="all" rel="stylesheet" type="text/css" /> 
+         
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+        <script type="text/javascript" src="jquery.drag-blank-quiz.js"></script> 
+
+        <script type="text/javascript"> 
+         
+            $(document).ready(function(){
+                $('.quiz').dragBlankQuiz();
+            });
+         
+        </script> 
+     
+    </head> 
+    <body> 
+     
+        <div class="quiz" data-fake-answers='["hamster cage", "spider", "unicorn"]'>
+
+            <ol class="qs">
+                <li>Someone gives you a <span class="quiz-answer">calfskin wallet</span>.</li>
+                <li>He shows you his <span class="quiz-answer">butterfly collection</span> plus the killing jar.</li>
+                <li>Suddenly you realize there's a <span class="quiz-answer">wasp</span> crawling on your arm.</li>
+                <li>Describe in single words, only the good things that come
+                    into your mind about <span class="quiz-answer">your mother</span>.</li>
+            </ol>
+            
+        </div>
+
+
+        <div class="quiz" 
+            data-fake-answers='["snake", "jungle", "buildings"]'>
+
+            <p class="qp">
+                You're in a <span class="quiz-answer">desert</span> walking
+                along in the <span class="quiz-answer">sand</span> when all of
+                the sudden you look down, and you see a <span
+                    class="quiz-answer">tortoise</span>. It's crawling toward
+                you. You reach down, you flip the tortoise over on its back.
+            </p>
+
+        </div>
+
+     
+     
+    </body> 
+</html> 
+ 
